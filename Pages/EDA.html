@@ -1,0 +1,255 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <meta content="width=device-width, initial-scale=1.0" name="viewport">
+
+  <title>Supplement Intake</title>
+  <meta content="" name="description">
+  <meta content="" name="keywords">
+
+  <!-- Favicons -->
+  <link href="../assets/img/favicon.png" rel="icon">
+  <link href="../assets/img/apple-touch-icon.png" rel="apple-touch-icon">
+
+  <!-- Google Fonts -->
+  <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,300i,400,400i,600,600i,700,700i|Roboto:300,300i,400,400i,500,500i,700,700i&display=swap" rel="stylesheet">
+
+  <!-- Vendor CSS Files -->
+  <link href="../assets/vendor/animate.css/animate.min.css" rel="stylesheet">
+  <link href="../assets/vendor/aos/aos.css" rel="stylesheet">
+  <link href="../assets/vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+  <link href="../assets/vendor/bootstrap-icons/bootstrap-icons.css" rel="stylesheet">
+  <link href="../assets/vendor/boxicons/css/boxicons.min.css" rel="stylesheet">
+  <link href="../assets/vendor/glightbox/css/glightbox.min.css" rel="stylesheet">
+  <link href="../assets/vendor/swiper/swiper-bundle.min.css" rel="stylesheet">
+
+  <!-- Template Main CSS File -->
+  <link href="../assets/css/style.css" rel="stylesheet">
+
+  
+</head>
+
+<body>
+
+  <!-- ======= Header ======= -->
+  <header id="header" class="fixed-top ">
+    <div class="container d-flex align-items-center justify-content-lg-between">
+
+      <h1 class="text-light"><a href="index.html"><span style="color: white; font-size: 25px;">Avinya</span></a></h1>
+      <!-- Uncomment below if you prefer to use an image logo -->
+      <!-- <a href="index.html" class="logo me-auto me-lg-0"><img src="../assets/img/logo.png" alt="" class="img-fluid"></a>-->
+
+      <nav id="navbar" class="navbar">
+        <ul>
+          <li><a  href="../index.html">Home</a></li>
+          <li><a class="active"  href="./EDA.html">EDA</a></li>
+         
+          <li class="dropdown"><a  href="#"><span>Unsupervised Learning</span> <i class="bi bi-chevron-down"></i></a>
+            <ul>
+              <li><a href="./Clustering.html">Clustering</a></li>
+              <li><a href="./ARM.html">ARM</a></li>
+            </ul>
+          </li>
+          <li class="dropdown"><a  href="#"><span>Supervised Learning</span> <i class="bi bi-chevron-down"></i></a>
+            <ul>
+              <li><a href="./DT.html">Decision Trees</a></li>
+              
+              <li><a href="./NB.html">Naive Bayes</a></li>
+              <li><a href="./SVM.html">SVM</a></li>
+            </ul>
+          </li>
+          <li><a  href="./LDA.html">LDA</a></li>
+
+          <li><a  href="./NN.html">Neural Networks</a></li>
+          <li><a  href="../conc.html">Conclusion</a></li>
+          
+          
+        </ul>
+        <i class="bi bi-list mobile-nav-toggle"></i>
+      </nav><!-- .navbar -->
+      
+
+    </div>
+  </header><!-- End Header -->
+
+
+
+
+  
+  <main id="main">
+    <!-- ======= About Us Section ======= -->
+    <section class="breadcrumbs">
+     <div class="container">
+
+       <div class="d-flex justify-content-between align-items-center">
+         <h2>Exploratory Data Analysis</h2>
+         <ol>
+           <li><a href="../index.html">Home</a></li>
+           <li>EDA</li>
+         </ol>
+       </div>
+
+     </div>
+   </section><!-- End About Us Section -->
+  
+    <!-- ======= Features Section ======= -->
+  
+
+<div class="tabset">
+  <!-- Tab 1 -->
+  <input type="radio" name="tabset" id="tab1" aria-controls="marzen" checked>
+  <label for="tab1">Introduction</label>
+  
+  <input type="radio" name="tabset" id="tab3" aria-controls="dunkles">
+  <label for="tab3">Results & Conclusion</label>
+  
+  <div class="tab-panels">
+    <section id="marzen" class="tab-panel">
+          <div class="row">
+            <div class="col-lg-6">
+              <img src="../assets/img/intro/ieda.gif" class="img-fluid" alt=""  style="width: 1000px;height: 450px;">
+            </div>
+            <div class="col-lg-6 pt-4 pt-lg-0">
+              <p style="font-size: 20px;font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif, Courier, monospace; padding: 10px;">
+                Exploratory Data Analysis (EDA) is an approach to analyzing data that involves summarizing and visualizing the main characteristics of the data in order to gain insights and identify patterns.
+                To perform EDA on Twitter data related to supplement intake, you could start by collecting a dataset of tweets that mention supplements. You could use a Twitter API to search for tweets containing keywords related to supplements, or you could use a pre-existing dataset of tweets that have been collected and labeled for sentiment analysis.
+
+Once you have your dataset, you could start by cleaning and preprocessing the data to remove any irrelevant information or noise, such as retweets or spam messages.
+</p>
+              <h4 style="font-size: 20px;font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif, Courier, monospace; padding: 10px;">Data Gathering</h4>
+              <p style="font-size: 20px;font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif, Courier, monospace; padding: 10px;">
+                The data is collected from last 3 months tweets. 
+                Used the following code to extract tweets and the required topic.
+                <i>Link to the code:</i> <a href="https://github.com/Sreepa1995/avinya.github.io/blob/main/code/Python/TextMining_TwitterExtract.ipynb">Extract Twitter Data</a>
+                <i>Link to the Dataset:</i><a href="https://github.com/Sreepa1995/avinya.github.io/blob/main/data/twitterdatav1.csv">Dataset</a>
+                <a href="" style="color: 'blue"></a><br/> </p>
+            
+         
+          </div>
+  
+      </section><!-- End Features Section -->
+
+    <section id="dunkles" class="tab-panel">
+      <h4>Word Cloud: Raw data</h4><br/>
+      <p style="font-size: 20px;font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif, Courier, monospace; padding: 10px;">
+
+        The word cloud visualization can provide a quick and intuitive way to understand the most commonly used words and phrases in tweets related to supplement intake and the sentiments associated with them. The larger the word appears in the cloud, the more frequently it appears in the tweets.
+        <br/>
+        In this dataset, 
+        Data cleaning and preprocessing usually involves removing duplicates, filtering out non-relevant words or phrases, removing punctuation marks, stop words, and special characters, and converting all text to lowercase, among other techniques. Once the dataset has been cleaned and preprocessed, you can generate a more accurate word cloud that better represents the main characteristics and patterns in the data.
+         </p>
+        <div class="row">
+          <div class="col-lg-6">
+
+            <img src="../assets/img/intro/rda1.png" alt="Avatar" style="width: 1400px; height: 500px">
+          </div>
+         
+          
+       <hr/>
+        <h4>Word Clouds for Positive, Negative and cleaned dataset</h4>
+        <p style="font-size: 20px;font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif, Courier, monospace; padding: 10px;">
+
+
+For the given dataset, in the case of sentiment analysis on supplement intake, the word cloud for positive sentiment might include words like "benefits", "healthy", "boost", "improve", and "nutrition", while the word cloud for negative sentiment might include words like "dangerous", "unsafe", "fake", "scam", and "waste". The word cloud for neutral sentiment might include words like "supplement", "intake", "health", and "nutrition" that do not strongly convey positive or negative sentiment.
+
+By analyzing the word clouds, we can get a sense of the most commonly used words and phrases in tweets related to supplement intake and the sentiments associated with them. This information can help us understand the general sentiment towards supplement intake on Twitter and can inform marketing campaigns and public health policies related to supplement use.
+        </p>
+        <div class="row">
+          <div class="col-lg-6">
+            <img src="../assets/img/intro/pos.png" alt="Avatar" style="width:700px;height:320px;">
+                    </div>
+          <div class="col-lg-6 pt-4 pt-lg-0">
+            <img src="../assets/img/intro/neu.png" alt="Avatar" style="width:720px;height:320px;">
+        </div>
+       
+        <p style="font-size: 20px;font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif, Courier, monospace; padding: 10px;">
+          Following show the word cloud for cleaned tweets and also the distribution of positive, negative and neutral tweets which shows the seentiments 
+          associated with the supplement intake.
+
+             </p>
+        <div class="row">
+          <div class="col-lg-6 pt-4 pt-lg-0">
+            <img src="../assets/img/intro/eda2.png" alt="Avatar" style="width:720px;height:320px;">
+        </div>
+          <div class="col-lg-6 pt-4 pt-lg-0">
+            <img src="../assets/img/intro/sent.png" alt="Avatar" style="width:600px;height:320px;">
+        </div>
+
+       
+        <h4 >Graphs showing distribution of words, characters in tweets.</h4>
+        <p style="font-size: 20px;font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif, Courier, monospace; padding: 10px;">
+
+          The graphs for text length, word count, top 30 words, and character length can provide valuable insights into the characteristics and patterns of the Twitter data related to supplement intake. Here's what each graph can tell us:
+ 
+          
+          <br/>
+          Text length: This graph shows the distribution of tweet lengths in the dataset. The X-axis represents the number of characters in the tweet, and the Y-axis represents the frequency of tweets with that number of characters. By analyzing this graph, we can identify the typical length of tweets related to supplement intake, which can help inform our understanding of how people communicate about this topic on Twitter.
+          
+          Word count: This graph shows the distribution of word counts in the dataset. The X-axis represents the number of words in the tweet, and the Y-axis represents the frequency of tweets with that number of words. By analyzing this graph, we can identify the typical number of words used in tweets related to supplement intake, which can help inform our understanding of how much information people typically share about this topic on Twitter.
+                  </p>
+        <div class="row">
+          <div class="col-lg-6">
+            <img src="../assets/img/intro/charcount.png" alt="Avatar" style="width:720px;height:320px;">
+                                  </div>
+          <div class="col-lg-6 pt-4 pt-lg-0">
+            <img src="../assets/img/intro/wordCount.png" alt="Avatar" style="width:700px;height:320px;">
+        </div>
+        <p style="font-size: 20px;font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif, Courier, monospace; padding: 10px;">
+
+          Top 30 words: This graph shows the 30 most commonly used words in the dataset, along with their frequency of occurrence. By analyzing this graph, we can identify the most common words and phrases used in tweets related to supplement intake, which can help inform our understanding of the main topics and themes associated with this topic on Twitter.
+          
+          Character length: This graph shows the distribution of character lengths of the top 30 most common words in the dataset. The X-axis represents the number of characters in the word, and the Y-axis represents the frequency of occurrence of words with that number of characters. By analyzing this graph, we can identify the typical length of the most commonly used words in tweets related to supplement intake, which can help inform our understanding of how people communicate about this topic on Twitter.
+          
+          
+          
+           </p>
+        <div class="row">
+          <div class="col-lg-6">
+            <img src="../assets/img/intro/textlen.png" alt="Avatar" style="width:720px;height:320px;">
+                     </div>
+          <div class="col-lg-6 pt-4 pt-lg-0">
+            <img src="../assets/img/intro/top30.png" alt="Avatar" style="width:700px;height:320px;">
+          </div>
+         
+
+          <p style="font-size: 20px;font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif, Courier, monospace; padding: 10px;">
+
+          
+            Overall, these graphs can provide valuable insights into the characteristics and patterns of the Twitter data related to supplement intake, which can help inform marketing campaigns, public health policies, and other initiatives related to this topic.
+            
+            
+             </p>
+
+      </div>
+  </section>
+
+</div>
+
+
+
+    
+  
+
+  </main><!-- End #main -->
+
+
+  <a href="#" class="back-to-top d-flex align-items-center justify-content-center"><i class="bi bi-arrow-up-short"></i></a>
+
+  <!-- Vendor JS Files -->
+  <script src="../assets/vendor/purecounter/purecounter_vanilla.js"></script>
+  <script src="../assets/vendor/aos/aos.js"></script>
+  <script src="../assets/vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+  <script src="../assets/vendor/glightbox/js/glightbox.min.js"></script>
+  <script src="../assets/vendor/isotope-layout/isotope.pkgd.min.js"></script>
+  <script src="../assets/vendor/swiper/swiper-bundle.min.js"></script>
+  <script src="../assets/vendor/waypoints/noframework.waypoints.js"></script>
+  <script src="../assets/vendor/php-email-form/validate.js"></script>
+
+  <!-- Template Main JS File -->
+  <script src="../assets/js/main.js"></script>
+
+</body>
+
+</html>

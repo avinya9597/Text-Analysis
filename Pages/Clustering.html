@@ -1,0 +1,390 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <meta content="width=device-width, initial-scale=1.0" name="viewport">
+
+  <title>Supplement Intake</title>
+  <meta content="" name="description">
+  <meta content="" name="keywords">
+
+  <!-- Favicons -->
+  <link href="../assets/img/favicon.png" rel="icon">
+  <link href="../assets/img/apple-touch-icon.png" rel="apple-touch-icon">
+
+  <!-- Google Fonts -->
+  <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,300i,400,400i,600,600i,700,700i|Roboto:300,300i,400,400i,500,500i,700,700i&display=swap" rel="stylesheet">
+
+  <!-- Vendor CSS Files -->
+  <link href="../assets/vendor/animate.css/animate.min.css" rel="stylesheet">
+  <link href="../assets/vendor/aos/aos.css" rel="stylesheet">
+  <link href="../assets/vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+  <link href="../assets/vendor/bootstrap-icons/bootstrap-icons.css" rel="stylesheet">
+  <link href="../assets/vendor/boxicons/css/boxicons.min.css" rel="stylesheet">
+  <link href="../assets/vendor/glightbox/css/glightbox.min.css" rel="stylesheet">
+  <link href="../assets/vendor/swiper/swiper-bundle.min.css" rel="stylesheet">
+
+  <!-- Template Main CSS File -->
+  <link href="../assets/css/style.css" rel="stylesheet">
+
+ 
+</head>
+
+<body>
+
+  <!-- ======= Header ======= -->
+  <header id="header" class="fixed-top ">
+    <div class="container d-flex align-items-center justify-content-lg-between">
+
+      <h1 class="text-light"><a href="index.html"><span style="color: white; font-size: 25px;">Avinya</span></a></h1>
+      <!-- Uncomment below if you prefer to use an image logo -->
+      <!-- <a href="index.html" class="logo me-auto me-lg-0"><img src="../assets/img/logo.png" alt="" class="img-fluid"></a>-->
+
+      <nav id="navbar" class="navbar">
+        <ul>
+          <li><a  href="../index.html">Home</a></li>
+          <li><a  href="./EDA.html">EDA</a></li>
+         
+          <li class="dropdown"><a class="active"  href="#"><span>Unsupervised Learning</span> <i class="bi bi-chevron-down"></i></a>
+            <ul>
+              <li><a href="./Clustering.html">Clustering</a></li>
+              <li><a href="./ARM.html">ARM</a></li>
+            </ul>
+          </li>
+          <li class="dropdown"><a  href="#"><span>Supervised Learning</span> <i class="bi bi-chevron-down"></i></a>
+            <ul>
+              <li><a href="./DT.html">Decision Trees</a></li>
+              
+              <li><a href="./NB.html">Naive Bayes</a></li>
+              <li><a href="./SVM.html">SVM</a></li>
+            </ul>
+          </li>
+          <li><a  href="./LDA.html">LDA</a></li>
+
+          <li><a  href="./NN.html">Neural Networks</a></li>
+          <li><a  href="../conc.html">Conclusion</a></li>
+          
+          
+        </ul>
+        <i class="bi bi-list mobile-nav-toggle"></i>
+      </nav><!-- .navbar -->
+      
+
+    </div>
+  </header><!-- End Header -->
+
+
+
+
+  
+  <main id="main">
+     <!-- ======= About Us Section ======= -->
+     <section class="breadcrumbs">
+      <div class="container">
+
+        <div class="d-flex justify-content-between align-items-center">
+          <h2>Clustering</h2>
+          <ol>
+            <li><a href="../index.html">Home</a></li>
+            <li>Clustering</li>
+          </ol>
+        </div>
+
+      </div>
+    </section><!-- End About Us Section -->
+   
+    <!-- ======= Features Section ======= -->
+   <!-- 
+  
+  
+-->
+
+<div class="tabset">
+  <!-- Tab 1 -->
+  <input type="radio" name="tabset" id="tab1" aria-controls="marzen" checked>
+  <label for="tab1">Introduction</label>
+  <!-- Tab 2 -->
+  <input type="radio" name="tabset" id="tab2" aria-controls="rauchbier">
+  <label for="tab2">Data Gathering</label>
+  <!-- Tab 3 -->
+  <input type="radio" name="tabset" id="tab3" aria-controls="dunkles">
+  <label for="tab3">Analysis,Results & Conclusion</label>
+  
+  <div class="tab-panels">
+    <section id="marzen" class="tab-panel">
+      
+        <div class="container">
+  
+          <div class="row" data-aos="fade-up">
+            <div class="col-md-5">
+              <img src="../assets/img/Cluster/intro.gif" class="img-fluid" alt="" >
+            </div>
+            <div class="col-md-7 pt-4">
+              <p style="font-size: 20px;font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif, Courier, monospace; padding: 10px;">
+
+                K-means clustering is a popular unsupervised machine learning algorithm used to group similar data points into clusters. In the context of Twitter data analysis on the topic of supplement intake, K-means clustering can be used to identify patterns and similarities in the tweets based on their content, sentiments, and other relevant features.
+
+                <br/>
+                In partition clustering, the data is divided into K clusters, where K is a predefined number. The algorithm randomly selects K initial centroids and assigns each data point to the nearest centroid. The algorithm then updates the centroid positions and re-assigns the data points iteratively until the centroids no longer move significantly or a maximum number of iterations is reached. This method is computationally efficient and works well for large datasets, but it may be sensitive to the initial centroids and can result in sub-optimal clusters.
+              </p>
+             
+
+            </div>
+            <p style="font-size: 20px;font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif, Courier, monospace; padding: 10px;">
+
+              In hierarchical clustering, the data is divided into a hierarchy of clusters that can be visualized as a tree-like structure called a dendrogram. The algorithm starts by treating each data point as a separate cluster and then iteratively merges the closest clusters based on a chosen distance metric. There are two types of hierarchical clustering: agglomerative (bottom-up) and divisive (top-down). Agglomerative clustering starts with each data point as a separate cluster and iteratively merges the closest pairs of clusters until all data points belong to a single cluster. Divisive clustering starts with all data points in a single cluster and recursively splits the clusters into smaller clusters. Hierarchical clustering can be computationally expensive for large datasets, but it is more flexible than partition clustering and can provide more insight into the structure of the data.
+            </p>
+          </div>
+  
+          <div class="row" data-aos="fade-up">
+            <div class="col-md-5 order-1 order-md-2">
+              <img src="../assets/img/Cluster/i2.webp" class="img-fluid" alt="" ">
+              </div>
+            <div class="col-md-7 pt-5 order-2 order-md-1">
+              
+              <p style="font-size: 20px;font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif, Courier, monospace; padding: 10px;">
+                Distance metrics are a key component of clustering algorithms, as they define the notion of similarity or dissimilarity between data points. The most common distance metrics used in clustering are:
+
+                
+                <ol class="fst-italic"><b>
+                  <li>             
+                    Euclidean distance: This is a common distance metric used in clustering and measures the straight-line distance between two points in n-dimensional space. For GHG pollutant data, this metric can be used to measure the distance between two countries or regions based on their emissions of different GHG pollutants.
+                  </li>
+                  <li>            
+                    Cosine distance: This metric can be used to calculate the similarity between two tweets based on their content. We can represent each tweet as a vector of word frequencies, and then compute the cosine similarity between the vectors. This can help us cluster tweets that are similar in terms of their content, while being insensitive to the length of the tweets.
+
+                  </li>
+                  <li>             
+                    Hamming distance: This metric can be used to calculate the distance between two tweets based on their sentiment labels. We can represent each tweet as a binary vector indicating whether it has a positive, negative, or neutral sentiment, and then compute the Hamming distance between the vectors. This can help us cluster tweets that have similar sentiment labels.
+ 
+                  </li>
+                <p class="fst-italic">
+                  
+                  Choosing the right distance metric is important for the performance of clustering algorithms, as it can impact the quality and interpretability of the resulting clusters.
+  </p>
+                </b>
+                </ol>
+              
+              </p>
+           
+            </div>
+            <hr/>
+          
+         
+  
+        </div>
+      </section><!-- End Features Section -->
+  </section>
+    <section id="rauchbier" class="tab-panel">
+     <h4 style="padding:10px">Data Gathering:</h4><br/>
+     <ol>
+      <li style="font-size: 20px;font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif, Courier, monospace; padding: 10px;">Used Count vectorized data: cluster_datav2.csv <br/>
+        Link to the dataset: <a href="https://github.com/Sreepa1995/avinya.github.io/blob/main/data/ClusterData/ClusterData_Twitter.csv">Dataset</a>
+        <br/>
+        Link to HClust code: <a href="https://github.com/Sreepa1995/avinya.github.io/blob/main/code/R%20/HClust_TextMining.Rmd">Hierarchical Clustering</a>
+       <br/> Link to the Python code: <a href="https://github.com/Sreepa1995/avinya.github.io/blob/main/code/Python/TextMining_ProjectV1.ipynb">Complete Code</a>
+
+        <br/>
+      <div class="row">
+        <div class="col-lg-6">
+          <img src="../assets/img/Cluster/tfidf.jpg" class="img-fluid" alt="" >
+         
+          </div>
+          <div class="col-lg-6 pt-4 pt-lg-0">
+           
+            <img src="../assets/img/Cluster/cluster.jpg" class="img-fluid" alt="">
+        </div> 
+          <p style="font-size: 20px;font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif, Courier, monospace; padding: 10px;">
+            
+           
+          </p>
+     <br/>
+
+      <li style="font-size: 20px;font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif, Courier, monospace; padding: 10px;">
+      
+          <img src="../assets/img/Cluster/hclust.jpg" class="img-fluid" alt="" style="height: 350px;width: 100%;">
+    
+          <p style="font-size: 20px;font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif, Courier, monospace; padding: 10px;">
+    
+            In hierarchical clustering, we can use agglomerative clustering to form clusters bottom-up. We start with each tweet as a separate cluster and compute the pairwise distances between all the clusters using the Euclidean distance. We then merge the closest pair of clusters and repeat until we have a single cluster that contains all the tweets. We can use the ward linkage criterion, which minimizes the variance of the distances between the clusters being merged, to determine the distance between clusters. This results in a dendrogram that can be used to visualize the hierarchical structure of the clusters.
+          </p>
+        <p style="font-size: 20px;font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif, Courier, monospace; padding: 10px;">
+          In k-means clustering, we need to specify the number of clusters K that we want to form. We can use techniques like elbow method or silhouette score to determine the optimal value of K. Once we have the value of K, we can initialize K centroids randomly and assign each data point to the closest centroid. We then update the centroids by taking the mean of all the data points in each cluster, and reassign the data points to the new centroids. We repeat these steps until convergence. In the case of count vectorizer data, each data point represents a tweet, and each feature represents the frequency of a particular word. We can use the Euclidean distance as the distance metric to compute the distance between tweets.
+
+
+
+        </p>
+        </li>
+    </ol>
+    </section>
+    <section id="dunkles" class="tab-panel">
+      <h4>Hierarchical Clustering</h4>
+      <p style="font-size: 20px;font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif, Courier, monospace; padding: 10px;">
+        The resulting dendrogram plot is produced by the plot() function, which takes the hierarchical clustering object (hc) as input. The x-axis of the plot shows the distance between the clusters, and the y-axis shows the objects being clustered. The xlab argument sets the label for the x-axis, and the hang argument sets the amount of space to reserve on the left-hand side of the plot for the object labels. A value of -1 for hang means that the labels are left-justified.
+        The resulting plot shows the hierarchy of clusters, with similar objects grouped together at the bottom of the plot and dissimilar objects grouped further up the plot. The height of the branches in the dendrogram represents the distance between clusters. Clusters that are closer together have a lower branch height, while clusters that are further apart have a higher branch height.
+
+      </p>
+      <div class="row">
+        <b>Dendrogram using Cosine similarity and H Clust with 4 clusters</b>
+
+        <div class="col-lg-6">
+          <img src="../assets/img/Cluster/hclust2" class="img-fluid" alt="" >
+    
+        </div>
+
+        <div class="col-lg-6 pt-4 pt-lg-0">
+          <img src="../assets/img/Cluster/hclust4" class="img-fluid" alt="" >
+      </div>
+     <br/>
+      <hr/>
+
+      <h4>
+       Choosing K
+      </h4>
+      <p style="font-size: 20px;font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif, Courier, monospace; padding: 10px;">
+        This line displays the elbow plot generated by the KElbowVisualizer. The elbow plot shows the within-cluster sum of squares as a function of the number of clusters (k). The optimal number of clusters is usually where the curve starts to level off, which looks like an elbow.
+
+        By examining the elbow plot, one can determine the optimal number of clusters for the dataset X.        <br/>
+        The optimal number of clusters is usually the one with the highest Silhouette Score. Therefore, in this case, we would look for the highest bar on the graph to determine the optimal number of clusters.
+        Therefore, the following graph shows silhouette score is high for k=2,4,7
+       </p>
+      <div class="row">
+        <b>Elbow method and silhouette methode to analyse the number of clusters to show</b>
+        <div class="col-lg-6">
+          <img src="../assets/img/Cluster/elbow.png" class="img-fluid" alt="">
+    
+        </div>
+
+        <div class="col-lg-6 pt-4 pt-lg-0">
+          <img src="../assets/img/Cluster/silscor.png" class="img-fluid" alt="" >
+      </div>
+     <hr/>
+     <h4>Following Graphs shows the silhouette scores for k=2,3,4,5</h4>
+     <p style="font-size: 20px;font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif, Courier, monospace; padding: 10px;">
+      The Silhouette Plot shows how well-separated the clusters are, based on the Silhouette Coefficient. A high Silhouette Coefficient indicates that the data point is well-matched to its own cluster and poorly-matched to neighboring clusters. The vertical line in the plot indicates the average Silhouette Coefficient for all data points in the cluster. By looking at the Silhouette Plots for different n_clusters values, we can determine the optimal number of clusters for the data.
+      <br/>
+      The code performs K-means clustering with different values of n_clusters and evaluates the quality of each clustering using the Silhouette Score. It also creates a Silhouette Plot for each clustering to help visualize the quality of the clustering.
+
+
+    </p>
+     <div class="row">
+
+      <div class="col-lg-6">
+        <img src="../assets/img/Cluster/sil2.png" class="img-fluid" alt="" >
+  
+      </div>
+      <div class="col-lg-6 pt-4 pt-lg-0">
+       
+        <img src="../assets/img/Cluster/sil3.png" class="img-fluid" alt="" >
+    </div> 
+    </div>
+    <hr/>
+    <div class="row">
+ 
+    <div class="col-lg-6 pt-4 pt-lg-0">
+       
+      <img src="../assets/img/Cluster/sil4.png" class="img-fluid" alt="">
+  </div> 
+  <div class="col-lg-6 pt-4 pt-lg-0">
+  <img src="../assets/img/Cluster/sil5.png" class="img-fluid" alt="" >
+</div> 
+    </div>
+    <hr/>
+  </div>
+  <h2>Conclusion</h2>
+  <br/>
+  <h4>From the elbow method and silhouette score, we see in elbow method the optimal number of clusters are 2, whereas
+    in silhouette method, silhouette score for k=2 is 88 % , k=4 is 79.99 and k=3 is 81
+
+  </h4>
+     <p style="font-size: 20px;font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif, Courier, monospace; padding: 10px;">
+      As the optimal number of clusters may vary depending on the specific dataset and  the number of iterations we perform, it's important to use a combination of techniques, including the elbow method, silhouette score, and domain knowledge, to determine the optimal number of clusters for a given dataset. Additionally, it's important to carefully interpret the results of cluster analysis and use the insights gained to inform strategies .
+      Hence based on the silhouette score, we can say the optimal number of cluster is 2.
+      <br/>
+    </p>
+    <div class="row">
+      <b>For k=2, shows how the clusters are formed and centroids are placed</b>
+
+      <div class="col-lg-6">
+        <img src="../assets/img/Cluster/c11.png" class="img-fluid" alt="" >
+  
+      </div>
+      <div class="col-lg-6 pt-4 pt-lg-0">
+       
+        <img src="../assets/img/Cluster/c12.png" class="img-fluid" alt="" >
+    </div> 
+    </div>
+    <hr/>
+    <div class="row">
+      <b>For k=3, shows how the clusters</b>
+
+      <div class="col-lg-6">
+        <img src="../assets/img/Cluster/c21.png" class="img-fluid" alt="" >
+  
+      </div>
+      <div class="col-lg-6 pt-4 pt-lg-0">
+       
+        <img src="../assets/img/Cluster/c22.png" class="img-fluid" alt="" >
+    </div> 
+    <div class="col-lg-6 pt-4 pt-lg-0">
+       
+      <img src="../assets/img/Cluster/c23.png" class="img-fluid" alt="" >
+  </div> 
+    </div>
+    <hr/>
+    <div class="row">
+      <b>For k=4, shows how the clusters are formed and centroids are placed</b>
+
+      <div class="col-lg-6">
+        <img src="../assets/img/Cluster/c31.png" class="img-fluid" alt="" >
+  
+      </div>
+      <div class="col-lg-6 pt-4 pt-lg-0">
+       
+        <img src="../assets/img/Cluster/c32.png" class="img-fluid" alt="" >
+    </div> 
+    </div>
+    <div class="row">
+      
+      <div class="col-lg-6">
+        <img src="../assets/img/Cluster/c33.png" class="img-fluid" alt="" >
+  
+      </div>
+      <div class="col-lg-6 pt-4 pt-lg-0">
+       
+        <img src="../assets/img/Cluster/c34.png" class="img-fluid" alt="" >
+    </div> 
+    </div>
+    <br/>
+  </section>
+
+</div>
+
+
+
+    
+  
+
+  </main><!-- End #main -->
+
+  
+
+  <a href="#" class="back-to-top d-flex align-items-center justify-content-center"><i class="bi bi-arrow-up-short"></i></a>
+
+  <!-- Vendor JS Files -->
+  <script src="../assets/vendor/purecounter/purecounter_vanilla.js"></script>
+  <script src="../assets/vendor/aos/aos.js"></script>
+  <script src="../assets/vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+  <script src="../assets/vendor/glightbox/js/glightbox.min.js"></script>
+  <script src="../assets/vendor/isotope-layout/isotope.pkgd.min.js"></script>
+  <script src="../assets/vendor/swiper/swiper-bundle.min.js"></script>
+  <script src="../assets/vendor/waypoints/noframework.waypoints.js"></script>
+  <script src="../assets/vendor/php-email-form/validate.js"></script>
+
+  <!-- Template Main JS File -->
+  <script src="../assets/js/main.js"></script>
+
+</body>
+
+</html>

@@ -1,0 +1,50 @@
+---
+title: "HClust_TextMining"
+author: "Sreevani Basvaraj Patil"
+date: "2023-03-05"
+output: html_document
+---
+
+```{r}
+#import the following libraries
+library(tidyverse)
+library(dplyr)
+library(gridExtra)
+library(webr)
+library(repr)
+library(ggplot2)
+library(plotly)
+library(proxy)
+```
+
+```{r}
+SupplementData <- read.csv('/Users/sbp/Downloads/ClusterData_Twitter.csv')
+head(SupplementData)
+```
+
+```{r}
+data <- matrix( sample(seq(1,2000),200), ncol = 5 )
+tweets_m <- scale(data)
+CosineSim <- tweets_m / sqrt(rowSums(tweets_m * tweets_m))
+CosineSim <- CosineSim %*% t(CosineSim)
+```
+
+```{r}
+# Cosine distance
+cos <- as.dist(1-CosineSim)
+
+dist <- dist(data[ , c(2:5)] , diag=TRUE, method="cosine")
+
+# Hierarchical Clustering with hclust
+hc <- hclust(cos,method = "ward.D2")
+
+# Plot the result
+plot(hc,xlab = "Distance",hang = -1)
+
+```
+
+```{r}
+plot(hc,xlab = "Distance",hang = -1)
+rect.hclust(hc , k = 2, border = 2:6)
+abline(h=1.0, col= "blue")
+```

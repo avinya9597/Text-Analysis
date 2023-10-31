@@ -1,0 +1,231 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <meta content="width=device-width, initial-scale=1.0" name="viewport">
+
+  <title>Supplement Intake</title>
+  <meta content="" name="description">
+  <meta content="" name="keywords">
+
+  <!-- Favicons -->
+  <link href="../assets/img/favicon.png" rel="icon">
+  <link href="../assets/img/apple-touch-icon.png" rel="apple-touch-icon">
+
+  <!-- Google Fonts -->
+  <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,300i,400,400i,600,600i,700,700i|Roboto:300,300i,400,400i,500,500i,700,700i&display=swap" rel="stylesheet">
+
+  <!-- Vendor CSS Files -->
+  <link href="../assets/vendor/animate.css/animate.min.css" rel="stylesheet">
+  <link href="../assets/vendor/aos/aos.css" rel="stylesheet">
+  <link href="../assets/vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+  <link href="../assets/vendor/bootstrap-icons/bootstrap-icons.css" rel="stylesheet">
+  <link href="../assets/vendor/boxicons/css/boxicons.min.css" rel="stylesheet">
+  <link href="../assets/vendor/glightbox/css/glightbox.min.css" rel="stylesheet">
+  <link href="../assets/vendor/swiper/swiper-bundle.min.css" rel="stylesheet">
+
+  <!-- Template Main CSS File -->
+  <link href="../assets/css/style.css" rel="stylesheet">
+
+ 
+</head>
+
+<body>
+
+  <!-- ======= Header ======= -->
+  <header id="header" class="fixed-top ">
+    <div class="container d-flex align-items-center justify-content-lg-between">
+
+      <h1 class="text-light"><a href="index.html"><span style="color: white; font-size: 25px;">Avinya</span></a></h1>
+      <!-- Uncomment below if you prefer to use an image logo -->
+      <!-- <a href="index.html" class="logo me-auto me-lg-0"><img src="../assets/img/logo.png" alt="" class="img-fluid"></a>-->
+
+      <nav id="navbar" class="navbar">
+        <ul>
+          <li><a  href="../index.html">Home</a></li>
+          <li><a href="./EDA.html">EDA</a></li>
+         
+          <li class="dropdown"><a  href="#"><span>Unsupervised Learning</span> <i class="bi bi-chevron-down"></i></a>
+            <ul>
+              <li><a href="./Clustering.html">Clustering</a></li>
+              <li><a href="./ARM.html">ARM</a></li>
+            </ul>
+          </li>
+          <li class="dropdown"><a  href="#"><span>Supervised Learning</span> <i class="bi bi-chevron-down"></i></a>
+            <ul>
+              <li><a href="./DT.html">Decision Trees</a></li>
+              
+              <li><a href="./NB.html">Naive Bayes</a></li>
+              <li><a href="./SVM.html">SVM</a></li>
+            </ul>
+          </li>
+          <li><a class="active"  href="./LDA.html">LDA</a></li>
+
+          <li><a  href="./NN.html">Neural Networks</a></li>
+          <li><a  href="../conc.html">Conclusion</a></li>
+          
+          
+        </ul>
+        <i class="bi bi-list mobile-nav-toggle"></i>
+      </nav><!-- .navbar -->
+      
+
+    </div>
+  </header><!-- End Header -->
+
+
+
+
+  
+  <main id="main">
+     <!-- ======= About Us Section ======= -->
+     <section class="breadcrumbs">
+      <div class="container">
+
+        <div class="d-flex justify-content-between align-items-center">
+          <h2>LDA</h2>
+          <ol>
+            <li><a href="../index.html">Home</a></li>
+            <li>LDA</li>
+          </ol>
+        </div>
+
+      </div>
+    </section><!-- End About Us Section -->
+   
+    <!-- ======= Features Section ======= -->
+   <!-- 
+  
+  
+-->
+
+<div class="tabset">
+  <!-- Tab 1 -->
+  <input type="radio" name="tabset" id="tab1" aria-controls="marzen" checked>
+  <label for="tab1">Introduction</label>
+  <!-- Tab 2 -->
+  <input type="radio" name="tabset" id="tab2" aria-controls="rauchbier">
+  <label for="tab2">Data Gathering</label>
+  <!-- Tab 3 -->
+  <input type="radio" name="tabset" id="tab3" aria-controls="dunkles">
+  <label for="tab3">Analysis,Results & Conclusion</label>
+  
+  <div class="tab-panels">
+    <section id="marzen" class="tab-panel">
+      
+        <div class="container">
+  
+          <div class="row" data-aos="fade-up">
+            <div class="col-md-5">
+              <img src="../assets/img/ARM/lda1.png" class="img-fluid" alt="" >
+            </div>
+            <div class="col-md-7 pt-4">
+              <p style="font-size: 20px;font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif, Courier, monospace; padding: 10px;">
+
+                Latent Dirichlet Allocation (LDA) is a probabilistic topic modeling technique that can be used to identify hidden topics or themes in a large corpus of text data. It assumes that each document in the corpus is a mixture of several topics, and that each topic is a probability distribution over a set of words.
+
+                In the context of Twitter data related to supplement intake, we can apply LDA to identify the underlying topics or themes that are discussed in the tweets. We can use LDA to identify the most important words or phrases that are associated with each topic, as well as the distribution of topics across the tweets in the dataset.
+                
+           
+              </p>
+             
+
+            </div>
+            <p style="font-size: 20px;font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif, Courier, monospace; padding: 10px;">
+              To apply LDA, we first need to preprocess the data by cleaning and tokenizing it, and then represent it as a bag of words or term frequency-inverse document frequency (TF-IDF) matrix. We can then apply LDA to the matrix to identify the topics and their associated words. LDA works by iteratively assigning each word in each document to a topic, and then updating the topic assignments based on the probabilities of the words and topics.
+                
+              Once we have identified the topics and their associated words, we can use them to better understand the underlying themes in the Twitter data related to supplement intake. For example, we might discover that there are topics related to the health benefits of supplements, the potential side effects of supplements, and the effectiveness of different types of supplements. We can also use the distribution of topics across the tweets to identify trends or patterns in public opinions and attitudes towards supplement intake.
+              
+              Overall, LDA is a powerful technique for identifying hidden topics or themes in large text datasets, and can provide valuable insights into public opinions and attitudes towards supplement intake on Twitter.
+
+            </p>
+          </div>
+  
+         
+      </section><!-- End Features Section -->
+  </section>
+    <section id="rauchbier" class="tab-panel">
+     <h4 style="padding:10px">Data Gathering:</h4><br/>
+     <ol>
+      <li style="font-size: 20px;font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif, Courier, monospace; padding: 10px;">Used Count vectorized data: cluster_datav2.csv <br/>
+        Link to the dataset: <a href="https://github.com/Sreepa1995/avinya.github.io/blob/main/data/ClusterData/ClusterData_Twitter.csv">Dataset</a>
+        <br/>
+      <div class="row">
+        <div class="col-lg-6" style="width: 90%;">
+          <img src="../assets/img/LDA/da1.jpg" class="img-fluid" alt="">
+         
+          </div>
+          
+          <p style="font-size: 20px;font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif, Courier, monospace; padding: 10px;">
+            
+            Topic modeling is a text analysis technique that aims to identify latent topics or themes in a corpus of text data. It involves identifying patterns of word usage across different documents and clustering these patterns into topics that reflect underlying themes in the data.
+
+            In the context of Twitter data related to supplement intake, topic modeling can be used to identify the underlying topics or themes that are discussed in the tweets. By identifying these themes, we can gain a better understanding of public opinions and attitudes towards supplement intake, as well as the factors that drive these opinions.
+            
+            To apply topic modeling, we first need to preprocess the data by cleaning and tokenizing it, and then represent it as a matrix of term frequencies or other features. We can then apply a clustering algorithm, such as Latent Dirichlet Allocation (LDA) or Non-Negative Matrix Factorization (NMF), to identify the underlying topics.
+            
+            Once we have identified the topics, we can use them to better understand the underlying themes in the Twitter data related to supplement intake. For example, we might discover that there are topics related to the health benefits of supplements, the potential side effects of supplements, and the effectiveness of different types of supplements. We can also use the distribution of topics across the tweets to identify trends or patterns in public opinions and attitudes towards supplement intake.
+            
+            Overall, topic modeling is a valuable technique for identifying latent topics or themes in large text datasets, and can provide valuable insights into public opinions and attitudes towards supplement intake on Twitter.
+          </p>
+     <br/>
+
+      <li style="font-size: 20px;font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif, Courier, monospace; padding: 10px;">
+      
+          <img src="../assets/img/LDA/lda2.png" class="img-fluid" alt="" >
+    
+         
+        </li>
+    </ol>
+    </section>
+    <section id="dunkles" class="tab-panel">
+      <h4></h4>
+      <p style="font-size: 20px;font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif, Courier, monospace; padding: 10px;">
+        The Intertopic Distance Map (via multidimensional scaling) is a visualization tool used to display the relationships between topics in a topic model. Each point on the map represents a topic, and the distance between the points reflects the similarity or dissimilarity between the topics.
+      </p>
+      <div class="row">
+        <b>
+          The count vectorizer matrix represents documents and columns representing terms (such as "free", "diets", "long", "different",...). 
+        </b>
+
+        <div class="col-lg-6" style="width: 100%;">
+          <img src="../assets/img/LDA/ida.jpg" class="img-fluid" alt="" >
+    
+        </div>
+
+      <hr/>
+
+    
+  </div>
+  
+
+</div>
+
+
+
+    
+  
+
+  </main><!-- End #main -->
+
+  
+
+  <a href="#" class="back-to-top d-flex align-items-center justify-content-center"><i class="bi bi-arrow-up-short"></i></a>
+
+  <!-- Vendor JS Files -->
+  <script src="../assets/vendor/purecounter/purecounter_vanilla.js"></script>
+  <script src="../assets/vendor/aos/aos.js"></script>
+  <script src="../assets/vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+  <script src="../assets/vendor/glightbox/js/glightbox.min.js"></script>
+  <script src="../assets/vendor/isotope-layout/isotope.pkgd.min.js"></script>
+  <script src="../assets/vendor/swiper/swiper-bundle.min.js"></script>
+  <script src="../assets/vendor/waypoints/noframework.waypoints.js"></script>
+  <script src="../assets/vendor/php-email-form/validate.js"></script>
+
+  <!-- Template Main JS File -->
+  <script src="../assets/js/main.js"></script>
+
+</body>
+
+</html>

@@ -1,0 +1,12 @@
+#https://scikit-learn.org/stable/modules/generated/sklearn.tree.DecisionTreeClassifier.html
+MyDT=DecisionTreeClassifier(criterion='entropy', ##"entropy" or "gini"
+                            splitter='best',  ## or "random" or "best"
+                            max_depth=5, 
+                            min_samples_split=5, 
+                            min_samples_leaf=2, 
+                            min_weight_fraction_leaf=0.0, 
+                            max_features=None, 
+                            random_state=None, 
+                            max_leaf_nodes=None, 
+                            min_impurity_decrease=0.0,                             
+                            class_weight=None)

@@ -1,0 +1,285 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <meta content="width=device-width, initial-scale=1.0" name="viewport">
+
+  <title>Climate penalty</title>
+  <meta content="" name="description">
+  <meta content="" name="keywords">
+
+  <!-- Favicons -->
+  <link href="../assets/img/favicon.png" rel="icon">
+  <link href="../assets/img/apple-touch-icon.png" rel="apple-touch-icon">
+
+  <!-- Google Fonts -->
+  <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,300i,400,400i,600,600i,700,700i|Roboto:300,300i,400,400i,500,500i,700,700i&display=swap" rel="stylesheet">
+
+  <!-- Vendor CSS Files -->
+  <link href="../assets/vendor/animate.css/animate.min.css" rel="stylesheet">
+  <link href="../assets/vendor/aos/aos.css" rel="stylesheet">
+  <link href="../assets/vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+  <link href="../assets/vendor/bootstrap-icons/bootstrap-icons.css" rel="stylesheet">
+  <link href="../assets/vendor/boxicons/css/boxicons.min.css" rel="stylesheet">
+  <link href="../assets/vendor/glightbox/css/glightbox.min.css" rel="stylesheet">
+  <link href="../assets/vendor/swiper/swiper-bundle.min.css" rel="stylesheet">
+
+  <!-- Template Main CSS File -->
+  <link href="../assets/css/style.css" rel="stylesheet">
+
+  <!-- =======================================================
+  * Template Name: Moderna - v4.11.0
+  * Template URL: https://bootstrapmade.com/free-bootstrap-template-corporate-moderna/
+  * Author: BootstrapMade.com
+  * License: https://bootstrapmade.com/license/
+  ======================================================== -->
+</head>
+
+<body>
+
+  <!-- ======= Header ======= -->
+  <header id="header" class="fixed-top ">
+    <div class="container d-flex align-items-center justify-content-lg-between">
+
+      <h1 class="text-light"><a href="../index.html"><span style="color: white; font-size: 25px;">Avinya</span></a></h1>
+      <!-- Uncomment below if you prefer to use an image logo -->
+      <!-- <a href="index.html" class="logo me-auto me-lg-0"><img src="../assets/img/logo.png" alt="" class="img-fluid"></a>-->
+
+      <nav id="navbar" class="navbar">
+        <ul>
+          <li><a  href="../index.html">Home</a></li>
+          <li><a href="./EDA.html">EDA</a></li>
+         
+          <li class="dropdown"><a  href="#"><span>Unsupervised Learning</span> <i class="bi bi-chevron-down"></i></a>
+            <ul>
+              <li><a href="./Clustering.html">Clustering</a></li>
+              <li><a href="./ARM.html">ARM</a></li>
+            </ul>
+          </li>
+          <li class="dropdown"><a class="active"  href="#"><span>Supervised Learning</span> <i class="bi bi-chevron-down"></i></a>
+            <ul>
+              <li><a href="./DT.html">Decision Trees</a></li>
+              
+              <li><a href="./NB.html">Naive Bayes</a></li>
+              <li><a href="./SVM.html">SVM</a></li>
+            </ul>
+          </li>
+          <li><a  href="./LDA.html">LDA</a></li>
+
+          <li><a  href="./NN.html">Neural Networks</a></li>
+          <li><a  href="../conc.html">Conclusion</a></li>
+          
+          
+        </ul>
+        <i class="bi bi-list mobile-nav-toggle"></i>
+      </nav><!-- .navbar -->
+      
+
+    </div>
+  </header><!-- End Header -->
+
+
+
+
+  
+  <main id="main">
+     <!-- ======= About Us Section ======= -->
+     <section class="breadcrumbs">
+      <div class="container">
+
+        <div class="d-flex justify-content-between align-items-center">
+          <h2>Naive Bayes</h2>
+          <ol>
+            <li><a href="../index.html">Home</a></li>
+            <li>Naive Bayes</li>
+          </ol>
+        </div>
+
+      </div>
+    </section><!-- End About Us Section -->
+   
+    <!-- ======= Features Section ======= -->
+   <!-- 
+  
+  Radio version of tabs.
+
+  Requirements:
+  - not rely on specific IDs for CSS (the CSS shouldn't need to know specific IDs)
+  - flexible for any number of unkown tabs [2-6]
+  - accessible
+
+  Caveats:
+  - since these are checkboxes the tabs not tab-able, need to use arrow keys
+
+  Also worth reading:
+  http://simplyaccessible.com/article/danger-aria-tabs/
+-->
+
+<div class="tabset">
+  <!-- Tab 1 -->
+  <input type="radio" name="tabset" id="tab1" aria-controls="marzen" checked>
+  <label for="tab1">Introduction</label>
+ 
+  <!-- Tab 3 -->
+  <input type="radio" name="tabset" id="tab3" aria-controls="dunkles">
+  <label for="tab3"> Data Prep & Analysis </label>
+  <!-- Tab 4 -->
+  <input type="radio" name="tabset" id="tab4" aria-controls="rach">
+  <label for="tab4">Results & Conclusion</label>
+  
+  <div class="tab-panels">
+    <section id="marzen" class="tab-panel">
+      
+        <div class="container" style="max-width: 100%;">
+  
+          <div class="row" >
+            <div class="col-md-5">
+              <img src="../assets/img/DT/nb1.jpeg" class="img-fluid" alt="" >
+            </div>
+            <div class="col-md-7 pt-4">
+              
+              <p style="font-size: 20px;font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif, Courier, monospace;">
+
+                Naive Bayes (NB) is a classification algorithm based on Bayes' theorem, which is a fundamental theorem in probability theory. It is called "naive" because it makes a simplifying assumption that the features are conditionally independent of each other given the class label. This assumption simplifies the calculations required to estimate the probabilities involved in the algorithm and makes it computationally efficient.
+
+Naive Bayes works by calculating the probability of each class label given the observed feature vector. 
+It does this by using Bayes' theorem, which states that the probability of a hypothesis (in this case, a class label) given some observed evidence is proportional to the product of the probability of the evidence given the hypothesis and the prior probability of the hypothesis.
+  </p>
+            </div>
+            <p style="font-size: 20px;font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif, Courier, monospace; padding: 10px;">
+              Multinomial NB is a variant of NB that works with categorical data, such as text data, where the features represent the frequencies of occurrence of different words or tokens in a document. The algorithm models the probability of each word in the vocabulary given a particular class label, and then uses Bayes' theorem to calculate the probability of each class label given the observed feature vector.
+
+
+              </p>
+          </div>
+  
+          <div class="row" data-aos="fade-up">
+            <div class="col-md-5 order-1 order-md-2">
+              <img src="../assets/img/DT/nb2.jpeg" class="img-fluid" alt="" style="height: 200px">
+              <br/>
+              <img src="../assets/img/DT/nb3.jpeg" class="img-fluid" alt="" style="height: 300px">
+            </div>
+            <div class="col-md-7 pt-5 order-2 order-md-1">
+              
+              <p style="font-size: 20px;font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif, Courier, monospace; padding: 10px;">
+                Bernoulli NB is another variant of NB that works with binary data, such as presence or absence of certain features in a document. In Bernoulli NB, the algorithm models the probability of each feature being present or absent given a particular class label, and then uses Bayes' theorem to calculate the probability of each class label given the observed feature vector.
+
+                Both Multinomial and Bernoulli NB can be used for a variety of classification tasks, such as spam filtering, sentiment analysis, document classification, and more. They are particularly well-suited for text classification tasks, where the features are discrete and sparse, and the number of features can be very large. These algorithms are also very easy to implement and can perform well even with limited training data. However, their performance may suffer in cases where the independence assumption is not satisfied, or where the features are highly correlated with each other. 
+                
+              </p>
+           
+            </div>
+            <hr/>
+          
+         
+  
+        </div>
+      </section><!-- End Features Section -->
+    <section id="rauchbier" class="tab-panel">
+      <p style="font-size: 20px;font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif, Courier, monospace; padding: 10px;">Used Clustering data: ClusterData_Twitter.csv <br/>
+        Link to the dataset: <a href="https://github.com/Sreepa1995/avinya.github.io/blob/main/data/DTData/ClusterData_Twitter.csv">Dataset</a>
+        <br/> Link to the Python code: <a href="https://github.com/Sreepa1995/avinya.github.io/blob/main/code/Python/TextMining_ProjectV1.ipynb">Code</a>
+
+\      </p>
+      <div class="row">
+        <div class="col-lg-6">
+          <img src="../assets/img/DT/sample.jpg" class="img-fluid" alt="" style="height: 350px;width: 100%;">
+         
+          </div>
+          <div class="col-lg-6 pt-4 pt-lg-0">
+           
+            <img src="../assets/img/DT1/sample2.jpg" class="img-fluid" alt="" style="height: 300px">
+        </div> 
+          <p style="font-size: 20px;font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif, Courier, monospace; padding: 10px;">
+            
+            The dataset include numeric values of the count vectorized labels
+          </p>
+          <h5>Training and Testing data</h5>
+          <p style="font-size: 20px;font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif, Courier, monospace; padding: 10px;">
+            When building a machine learning model, it is important to divide the data into a training set and a testing set. The training set is used to train the model, while the testing set is used to evaluate its performance and generalization ability.
+
+           
+            
+            
+    </p>
+   
+         
+        <p style="font-size: 20px;font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif, Courier, monospace; padding: 10px;">
+          In the context of supplement intake prediction using Naive Bayes, the data would be split into a training set and a testing set as follows:
+            
+            Data Split: The entire dataset containing information about individuals, their health status, and supplement intake would be randomly divided into two subsets: the training set and the testing set.
+            
+            Training Set: The training set would be used to train the Naive Bayes model by fitting the input features to the target variable (supplement intake). The model would learn from the input features in the training set and create a probabilistic model to predict the likelihood of supplement intake based on the input features.
+            
+            Testing Set: The testing set would be used to evaluate the performance of the Naive Bayes model. The model would predict the supplement intake for each individual in the testing set based on their input features. The predicted values would be compared to the actual supplement intake to measure the accuracy of the model.
+            
+            By splitting the data into a training set and a testing set, we can evaluate the performance of the Naive Bayes model and measure its ability to generalize to new data. The training set is used to fit the model parameters, while the testing set is used to evaluate the model's accuracy and generalization ability. The goal is to create a model that can accurately predict supplement intake for new individuals based on their input features.
+            
+            
+        </p>
+     
+      
+    </section>
+    <section id="dunkles" class="tab-panel">
+      <h4>Results</h4>
+      <p style="font-size: 20px;font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif, Courier, monospace; ">
+        We load a dataset of supplement intake with labels, split the dataset into training and testing sets, apply Gaussian Naive Bayes classification, and evaluate its performance on the testing set. We calculate metrics such as accuracy, precision, recall, and F1 score to evaluate the performance of the Naive Bayes classifier, and print a confusion matrix to see the number of true positives, false positives, true negatives, and false negatives for each label. We can use these metrics to tune the hyperparameters of the Naive Bayes classifier and improve its performance on the task of classifying supplement intake with the labels diet, proteins, drugs, and supplements.
+
+ </p><div class="col-md-5 order-1 order-md-2">
+  <img src="../assets/img/DT1/dt_cm.png" class="img-fluid" alt="" >
+  
+</div>
+
+      <div class="row">
+        
+        <p style="font-size: 20px;font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif, Courier, monospace; padding: 10px;">
+          The results obtained from Naive Bayes classification may vary depending on the dataset and the specific hyperparameters chosen. In general, Naive Bayes classifiers are known for their simplicity, scalability, and ability to handle high-dimensional data. They often perform well on text classification tasks and can provide useful insights into the most important features for each class label. However, Naive Bayes classifiers make the "naive" assumption of feature independence, which may not hold true in some datasets. Additionally, Naive Bayes classifiers may suffer from the problem of class imbalance, where some classes have much fewer instances than others.
+     
+        </p>
+
+       <h5>
+        Accuracy score
+       </h5>
+       <p style="font-size: 20px;font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif, Courier, monospace; padding: 10px;">
+        An accuracy score of 94% means that the Naive Bayes classifier correctly classified 94% of the instances in the testing set. This is a good performance for the task of classifying supplement intake with the labels diet, proteins, drugs, and supplements. However, we should also consider other metrics such as precision, recall, and F1 score to evaluate the performance of the classifier more comprehensively. Additionally, we should examine the confusion matrix to see which classes the classifier is struggling to distinguish, and whether there are any patterns or biases in the misclassifications. Depending on the specific application, we may need to prioritize certain metrics over others. For example, in a medical diagnosis scenario, we may want to prioritize high recall (to minimize false negatives), while in a marketing campaign, we may want to prioritize high precision (to minimize false positives).
+     </p>
+       <p style="font-size: 20px;font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif, Courier, monospace; padding: 10px;">
+        While a high accuracy score is generally desirable, it is important to consider other metrics such as precision, recall, and F1 score to get a more complete picture of the classifier's performance. For instance, if the dataset is imbalanced and one class has significantly fewer instances than the others, a high accuracy score may be misleading if the classifier simply predicts the majority class for most instances. In such cases, metrics such as precision and recall can provide more insights into the classifier's performance for each class label.
+</p>
+
+    
+     
+  
+  </section>
+
+ 
+
+</div>
+
+
+
+    
+  
+
+  </main><!-- End #main -->
+
+  
+  <a href="#" class="back-to-top d-flex align-items-center justify-content-center"><i class="bi bi-arrow-up-short"></i></a>
+
+  <!-- Vendor JS Files -->
+  <script src="../assets/vendor/purecounter/purecounter_vanilla.js"></script>
+  <script src="../assets/vendor/aos/aos.js"></script>
+  <script src="../assets/vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+  <script src="../assets/vendor/glightbox/js/glightbox.min.js"></script>
+  <script src="../assets/vendor/isotope-layout/isotope.pkgd.min.js"></script>
+  <script src="../assets/vendor/swiper/swiper-bundle.min.js"></script>
+  <script src="../assets/vendor/waypoints/noframework.waypoints.js"></script>
+  <script src="../assets/vendor/php-email-form/validate.js"></script>
+
+  <!-- Template Main JS File -->
+  <script src="../assets/js/main.js"></script>
+
+</body>
+
+</html>
